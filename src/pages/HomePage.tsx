@@ -12,9 +12,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   hpContainer: {
     width: "100vw",
-    [theme.breakpoints.up("sm")]: {
-      height: "100vh",
-    },
+    height: "100vh",
     //border: "3px solid red",
     justifyContent: "center",
     alignItems: "center",
@@ -23,8 +21,10 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
   },
   bgImage: {
-    // border: "3px solid yellow",
-    width: "100vw",
+    flex: 1,
+    width: null,
+    height: null,
+    resizeMode: "contain",
   },
   hpGrid: {
     //border: "3px solid green",
