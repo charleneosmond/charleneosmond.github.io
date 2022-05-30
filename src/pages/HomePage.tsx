@@ -69,10 +69,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.4em",
       padding: "0.75em 1.5em",
     },
-    backgroundColor: "transparent",
     color: "white",
     border: "1px solid white",
     boxShadow: "2px 2px black",
+    backgroundColor: "transparent",
+    "&:hover": {
+      backgroundColor: "gray",
+    },
   },
 }));
 
@@ -80,12 +83,15 @@ const HomePage: React.FC = () => {
   const classes = useStyles();
   const theme = useTheme();
   const bgImage = useMediaQuery(theme.breakpoints.up("sm")) ? HPweb : HPmb;
+
   return (
     <div className={classes.hpContainer}>
       <img src={bgImage} className={classes.bgImage} />
       <Grid container direction="column" className={classes.hpGrid}>
         <Typography className={classes.hpName}> Charlene Osmond </Typography>
-        <button className={classes.hpButton}> ENTER </button>{" "}
+        <a href="/mypath">
+          <button className={classes.hpButton}> ENTER </button>{" "}
+        </a>
       </Grid>
     </div>
   );
