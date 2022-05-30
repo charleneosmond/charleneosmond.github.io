@@ -18,16 +18,6 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     zIndex: 300,
   },
-  hambIcon: {
-    marginLeft: "15px",
-    marginTop: "20px",
-    fontSize: 30,
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: "30px",
-      marginTop: "30px",
-      fontSize: 50,
-    },
-  },
 }));
 
 const MainSidebar = () => {
@@ -56,7 +46,7 @@ const MainSidebar = () => {
           marginTop: useMediaQuery(theme.breakpoints.up("sm"))
             ? "30px"
             : "20px",
-          fontSize: useMediaQuery(theme.breakpoints.up("sm")) ? 50 : 30,
+          fontSize: useMediaQuery(theme.breakpoints.up("sm")) ? 40 : 30,
         }}
       />
     </div>

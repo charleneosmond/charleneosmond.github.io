@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     fontSize: "30px",
     [theme.breakpoints.up("sm")]: {
+      fontSize: "40px",
+    },
+    [theme.breakpoints.up("xl")]: {
       fontSize: "50px",
     },
     //border: "3px solid blue",

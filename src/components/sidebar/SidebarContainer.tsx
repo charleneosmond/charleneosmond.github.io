@@ -32,8 +32,10 @@ const SidebarContainer: React.FC<SidebarContainerProps> = (props) => {
         onClick={toggleShowing}
         style={{
           marginLeft: "225px",
-          marginTop: "30px",
-          fontSize: useMediaQuery(theme.breakpoints.up("sm")) ? 50 : 30,
+          marginTop: useMediaQuery(theme.breakpoints.up("sm"))
+            ? "30px"
+            : "20px",
+          fontSize: useMediaQuery(theme.breakpoints.up("sm")) ? 40 : 30,
         }}
       />
 
