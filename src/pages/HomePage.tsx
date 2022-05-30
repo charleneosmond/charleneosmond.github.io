@@ -1,6 +1,7 @@
 import * as React from "react";
 import HPweb from "../images/HPweb.jpg";
 import HPmb from "../images/HPmb.jpg";
+import { Link } from "react-router-dom";
 import {
   makeStyles,
   Typography,
@@ -89,9 +90,9 @@ const HomePage: React.FC = () => {
       <img src={bgImage} className={classes.bgImage} />
       <Grid container direction="column" className={classes.hpGrid}>
         <Typography className={classes.hpName}> Charlene Osmond </Typography>
-        <a href="/mypath">
+        <Link to="/mypath">
           <button className={classes.hpButton}> ENTER </button>{" "}
-        </a>
+        </Link>
       </Grid>
     </div>
   );

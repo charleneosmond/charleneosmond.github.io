@@ -14,7 +14,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route index element={<IndexPage />} />
       </Route>
-      <Route path="/mypath" element={<MainPage />} />
+      <Route path="mypath" element={<MainPage />} />
     </Routes>
   </BrowserRouter>
 );
