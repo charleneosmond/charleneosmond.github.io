@@ -11,10 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<IndexPage />} />
-      </Route>
-      <Route path="mypath" element={<MainPage />} />
+      <Route path="/" element={<App />} />
+      <Route path="works" element={<MainPage />} />
+      <Route path="works/test" element={<IndexPage />} />
     </Routes>
   </BrowserRouter>
 );

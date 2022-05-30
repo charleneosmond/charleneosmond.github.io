@@ -90,7 +90,7 @@ const HomePage: React.FC = () => {
       <img src={bgImage} className={classes.bgImage} />
       <Grid container direction="column" className={classes.hpGrid}>
         <Typography className={classes.hpName}> Charlene Osmond </Typography>
-        <Link to="/mypath">
+        <Link to="/works">
           <button className={classes.hpButton}> ENTER </button>{" "}
         </Link>
       </Grid>
